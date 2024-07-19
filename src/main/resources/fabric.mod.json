@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "armadillobrushfix",
+	"version": "${version}",
+	"name": "Armadillo Brush Fix",
+	"description": "Adds Armadillo Modded Brush Compatibility",
+	"authors": [
+		"Jackbusters"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/armadillo-brush-fix",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/armadillobrushfix/logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+		]
+	},
+	"mixins": [
+		"armadillobrushfix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
