@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(Armadillo.class)
 public class ArmadilloFix {
-
     @Redirect(method = "mobInteract", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
     private boolean isInstanceOfBrush(ItemStack instance, Item item){
         return item instanceof BrushItem;
